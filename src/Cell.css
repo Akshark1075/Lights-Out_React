@@ -1,0 +1,53 @@
+.Cell {
+  height: 100px;
+  width: 100px;
+  background-color:black;
+  border: 5px solid lightgoldenrodyellow;
+  transition:background-color 0.7s ease-in;
+  box-shadow: 0 0 3vw #F40A35;
+}
+
+.Cell {
+  animation: neon-orange 1s ease infinite;
+  -moz-animation: neon-orange 1s ease infinite;
+  -webkit-animation: neon-orange 1s ease infinite;
+}
+
+@keyframes neon-orange {
+  0%,
+  100% {
+    box-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    
+  }
+  50% {
+    box-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    
+  }
+}
+.Cell-lit {
+  
+  background-color: #426DFB;
+  box-shadow: 0 0 3vw #2356FF;
+  
+  
+}
+
+.Cell-lit {
+  animation: neon-blue 2s linear infinite;
+  -moz-animation: neon-blue 2s linear infinite;
+  -webkit-animation: neon-blue 2s linear infinite;
+  -o-animation: neon-blue 2s linear infinite;
+}
+
+@keyframes neon-blue {
+  0%,
+  100% {
+    box-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    background-color: #28D7FE;
+  }
+  50% {
+    box-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    background-color: #146C80;
+  }
+}
+
